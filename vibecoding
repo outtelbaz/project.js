@@ -1,0 +1,50 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+
+const Index = () => {
+  return (
+    <main className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
+      {/* Gradient background */}
+      <div 
+        className="absolute inset-0 -z-10" 
+        style={{ background: 'var(--gradient-hero)' }}
+      />
+      
+      {/* Hero content */}
+      <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+        <div className="space-y-4">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight bg-gradient-to-br from-primary via-accent to-primary bg-clip-text text-transparent animate-slide-up">
+            Outmane
+          </h1>
+          
+          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            Développeur frontend passionné par l'interactivité et le design
+          </p>
+        </div>
+        
+        <div className="pt-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <Button 
+            variant="hero" 
+            size="xl"
+            className="group"
+          >
+            Voir mes projets
+            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Index;
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+</style>
