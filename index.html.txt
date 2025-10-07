@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie Produits</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle">🌙 Mode sombre</button>
+
+  <section class="gallery">
+    <div class="card fade-in">
+      <img src="https://via.placeholder.com/300x200" alt="Produit 1" />
+      <h3>Produit 1</h3>
+      <p>Description du produit 1.</p>
+    </div>
+    <div class="card fade-in">
+      <img src="https://via.placeholder.com/300x200" alt="Produit 2" />
+      <h3>Produit 2</h3>
+      <p>Description du produit 2.</p>
+    </div>
+    <div class="card fade-in">
+      <img src="https://via.placeholder.com/300x200" alt="Produit 3" />
+      <h3>Produit 3</h3>
+      <p>Description du produit 3.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
